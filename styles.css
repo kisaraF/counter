@@ -1,7 +1,6 @@
 body{
 	font-family: arial;
 	background-image: url("https://images.pexels.com/photos/129731/pexels-photo-129731.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") ;
-	/*background-repeat: no-repeat;*/
 	background-size: cover;
 	
 }
@@ -15,11 +14,11 @@ body{
 	box-shadow: 5px 10px 10px;
 }
 
-.displayHere{
+#display{
 	font-size: 70px;
 }
 
-.buttons{
+.wrapper{
 	margin-top: 30px;
 	margin-bottom: 20px;
 }
@@ -35,6 +34,7 @@ button{
 	border:0;
 	color: #fff;
 	font-size: 16px;
+	margin-bottom: 15px;
 }
 
 button:hover{
@@ -45,11 +45,20 @@ button:focus{
 	outline: none;
 }
 
-.up{
-	margin-bottom: 15px;
+#increase{	
 	background-color: #0f6b00;
 }
 
-.decrease{
+#decrease{
 	background-color: #800003;
+}
+
+#def{
+	background-color: blue;
+}
+
+@media (max-width:  368px){
+	button{
+		width: 40%;
+	}
 }
